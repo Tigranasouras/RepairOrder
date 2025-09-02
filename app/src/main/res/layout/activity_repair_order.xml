@@ -15,7 +15,7 @@
         android:layout_marginTop="61dp"
         android:layout_marginEnd="150dp"
         android:layout_marginBottom="643dp"
-        android:text="Repair Order"
+        android:text="@string/repair_order"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +32,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="177dp"
         android:layout_marginBottom="604dp"
-        android:text="TextView"
+        android:text="@string/header"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,14 +42,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="198dp"
-        android:layout_marginBottom="49dp"
-        android:text="Order Type"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/order_type"
+        tools:layout_editor_absoluteY="194dp" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -68,9 +62,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Technician"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText2"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/technician"
         tools:layout_editor_absoluteY="260dp" />
 
     <EditText
@@ -80,6 +72,7 @@
         android:layout_marginTop="246dp"
         android:layout_marginBottom="440dp"
         android:ems="10"
+        android:hint="@string/tech_hint"
         android:inputType="text|textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,11 +84,8 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:text="Paint"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextText3"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText3"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="@string/paint"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextText3" />
 
     <EditText
         android:id="@+id/editTextText3"
@@ -104,6 +94,7 @@
         android:layout_marginTop="320dp"
         android:layout_marginBottom="366dp"
         android:ems="10"
+        android:hint="@string/paint_hint"
         android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +106,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Parts"
+        android:text="@string/parts"
         tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="407dp" />
 
@@ -126,6 +117,7 @@
         android:layout_marginTop="393dp"
         android:layout_marginBottom="293dp"
         android:ems="10"
+        android:hint="@string/parts_hint"
         android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -137,11 +129,8 @@
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Labor"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextText5"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText5"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="@string/labor"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextText5" />
 
     <EditText
         android:id="@+id/editTextText5"
@@ -157,72 +146,66 @@
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextNumberDecimal2"
+    <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="564dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="122dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/total"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
+        tools:layout_editor_absoluteX="234dp" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SubTotal"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimal2"
-        tools:layout_editor_absoluteX="122dp" />
-
-    <EditText
-        android:id="@+id/editTextNumberDecimal3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="617dp" />
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="33dp"
+        android:text="@string/subtotal"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/textView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tax"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimal3"
-        tools:layout_editor_absoluteX="144dp" />
-
-    <EditText
-        android:id="@+id/editTextNumberDecimal4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="676dp" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimal4"
-        tools:layout_editor_absoluteX="140dp" />
+        android:text="@string/tax"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+        tools:layout_editor_absoluteX="238dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="@string/submit"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="673dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar_empty"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar_empty"
+        tools:layout_editor_absoluteX="305dp"
+        tools:layout_editor_absoluteY="631dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar_empty"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="691dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
