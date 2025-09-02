@@ -58,7 +58,6 @@
         android:layout_marginTop="181dp"
         android:layout_marginBottom="505dp"
         android:ems="10"
-        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -81,7 +80,7 @@
         android:layout_marginTop="246dp"
         android:layout_marginBottom="440dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="text|textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -105,7 +104,7 @@
         android:layout_marginTop="320dp"
         android:layout_marginBottom="366dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -127,7 +126,7 @@
         android:layout_marginTop="393dp"
         android:layout_marginBottom="293dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
@@ -151,10 +150,79 @@
         android:layout_marginTop="478dp"
         android:layout_marginBottom="208dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="number|numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="564dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="122dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SubTotal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimal2"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="617dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimal3"
+        tools:layout_editor_absoluteX="144dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextNumberDecimal4"
+        tools:layout_editor_absoluteX="140dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="673dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
