@@ -142,7 +142,7 @@
         android:layout_marginStart="136dp"
         android:layout_marginTop="40dp"
         android:text="@string/total"
-        app:layout_constraintStart_toEndOf="@+id/SubmitButton"
+        app:layout_constraintStart_toEndOf="@+id/submitButton"
         app:layout_constraintTop_toBottomOf="@+id/TaxLabel" />
 
     <TextView
@@ -166,7 +166,7 @@
         app:layout_constraintTop_toBottomOf="@+id/SubTotalLabel" />
 
     <Button
-        android:id="@+id/SubmitButton"
+        android:id="@+id/submitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="9dp"
